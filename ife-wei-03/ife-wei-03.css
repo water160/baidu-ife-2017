@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; }
+
+.navbar { background: #4682B4; width:100%; height: 65px; }
+.navbar h2 { float: left; color: #ffffff; padding: 15px 20px;}
+.navbar ul { float: right; margin-right: 20px; list-style: none; }
+.navbar ul li { display: inline-block; }
+.navbar ul li a { color: #ffffff; text-decoration: none; height: 65px; line-height: 65px;
+                  padding: 20px;}
+.navbar ul li a:hover { background: #333333; transition: .3 all;}
+
+.footer { background: #4682B4; width:100%; height: 65px; }
+.footer p { color: #ffffff; text-align: center; padding: 20px; }
+.footer a { color: #ffffff; }
+
+/*自身浮动法 [must be left right middle]*/
+.container1, .card-left1, .card-middle1, .card-right1 { border: 1px solid #999999; }
+.container1 { margin: 20px; padding: 20px; background: #eeeeee; overflow: auto; }
+.card-left1, .card-middle1, .card-right1 { background: #ffffff; }
+
+.card-left1 { float: left; width: 160px; padding: 20px; }/*use float*/
+.card-left1 img { float: left; }
+.card-left1 p { float:right; }
+
+.card-middle1 { min-width: 300px; overflow: auto; padding: 20px; margin-left: 220px; margin-right: 140px; }
+.card-middle1 img { float: right; padding: 5px;}
+.card-middle1 p { padding: 5px; }
+
+.card-right1 { float: right; padding: 10px; width: 100px; }/*use float*/
+.card-right1 img { padding: 10px; }
+
+/*绝对定位法 [left middle right can switch freely]*/
+.container2, .card-left2, .card-middle2, .card-right2 { border: 1px solid #999999; }
+.container2 { position: relative; margin: 20px; padding: 20px; background: #eeeeee; overflow: auto; }
+.card-left2, .card-middle2, .card-right2 { background: #ffffff; }
+
+.card-left2 { position:absolute; left: 20px; top: 20px; width: 160px; padding: 20px; }/*use position:absolute and left, top*/
+.card-left2 img { float: left; }
+.card-left2 p { float:right; }
+
+.card-middle2 { min-width: 300px; overflow: auto; padding: 20px; margin-left: 220px; margin-right: 140px; }
+.card-middle2 img { float: right; padding: 5px;}
+.card-middle2 p { padding: 5px; }
+
+.card-right2 { position: absolute; top: 20px; right: 20px; padding: 10px; width: 100px; }/*use position:absolute, refered to .container2*/
+.card-right2 img { padding: 10px; }
+
+/*margin负值法*/

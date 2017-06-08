@@ -1,0 +1,85 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>任务三：三栏式布局</title>
+    <link rel="stylesheet" href="ife-wei-03.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>任务三：三栏式布局</h2>
+      <ul id="navlist">
+        <li><a href="#1">自身浮动法</a></li>
+        <li><a href="#2">绝对定位法</a></li>
+        <li><a href="#3">margin负值法</a></li>
+      </ul>
+    </div>
+
+    <div class="container1">
+      <div class="card-left1">
+        <img src="logo.jpg">
+        <p>团队头像</p>
+      </div>
+      <div class="card-right1">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+      </div>
+       <div class="card-middle1">
+        <h3 id="1">自身浮动法</h3>
+        <img src="container.jpg">
+        <p>此方法代码最简单。应用了标签浮动跟随的特性。左栏左浮动，右栏右浮动，主体直接放后面，就实现了自适应。</p>
+        <p>这里三个div标签的顺序的关键是要把主体div放在最后，左右两栏div顺序任意。当写了card-left1左浮动后，card-left1是脱离文本流的，那么在写card-middle1时，因没设置浮动，那么card-middle1就老老实实按照文本流的安排霸占第一行，当安排card-right1的放置时，card-right1设置了右浮动，而现在已经有card-middle1占据了第一行，card-right1只好从第二行放，且右浮动，就会被挤压到下方，如果card-middle1足够宽的话，左部分还会被浮动的card-left1给覆盖掉</p>
+        <p>此方法的优点是：代码足够简洁与高效；不足在于：中间主体存在克星，clear:both属性。如果要使用此方法，需避免明显的clear样式。</p>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="card-left2">
+        <img src="logo.jpg">
+        <p>团队头像</p>
+      </div>
+      <div class="card-middle2">
+        <h3 id="2">绝对定位法</h3>
+        <img src="container.jpg">
+        <p>三种方法里最直观，最容易理解的：左右两栏采用绝对定位，分别固定于页面的左右两侧，中间的主体栏用左右margin值撑开距离。于是实现了三栏自适应布局。</p>
+        <p>这里的左中右三个div的顺序是可以任意调整的（这里一定要记得在父元素里添加relative，然后使用top right定位，否则会被挤压到下方，还要使用overflow属性控制它在.container中，否则会溢出），这与剩下的两中方法就不一样了，需要注意一下。</p>
+        <p>此方法的优点是，理解容易，上手简单，受内部元素影响而破坏布局的概率低，就是比较经得起折腾。</p>
+        <p>缺点在于：如果中间栏含有最小宽度限制，或是含有宽度的内部元素，当浏览器宽度小到一定程度，会发生层重叠的情况。然而，一般情况下，除非用户显示器分辨率宽度>=1600像素，否则用户不会把浏览器缩小到1000像素以下的，所以该缺陷危害指数3。</p>
+      </div>
+      <div class="card-right2">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="card-left3">
+        <img src="logo.jpg">
+        <p>团队头像</p>
+      </div>
+      <div class="card-right3">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+        <img src="logo.jpg">
+      </div>
+
+      <div class="card-middle3">
+        <h3 id="2">绝对定位法</h3>
+        <img src="container.jpg">
+        <p>三种方法里最直观，最容易理解的：左右两栏采用绝对定位，分别固定于页面的左右两侧，中间的主体栏用左右margin值撑开距离。于是实现了三栏自适应布局。</p>
+        <p>这里的左中右三个div的顺序是可以任意调整的，这与剩下的两中方法就不一样了，需要注意一下。</p>
+        <p>此方法的优点是，理解容易，上手简单，受内部元素影响而破坏布局的概率低，就是比较经得起折腾。</p>
+        <p>缺点在于：如果中间栏含有最小宽度限制，或是含有宽度的内部元素，当浏览器宽度小到一定程度，会发生层重叠的情况。然而，一般情况下，除非用户显示器分辨率宽度>=1600像素，否则用户不会把浏览器缩小到1000像素以下的，所以该缺陷危害指数3。</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright ©2017 Baidu_IFE <a href="https://github.com/water160/baidu-ife-xiaowei-base" target="blank">water160</a></p>
+    </div>
+  </body>
+</html>
