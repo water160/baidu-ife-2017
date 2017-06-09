@@ -45,3 +45,19 @@
 .card-right2 img { padding: 10px; }
 
 /*margin负值法*/
+.container3, .card-left3, .card-middle3, .card-right3 { border: 1px solid #999999; }
+.container3 { margin: 20px; padding: 20px; background: #eeeeee; overflow: auto; }
+.card-left3, .card-middle3, .card-right3 { background: #ffffff; }
+
+.main { width: 100%; float: left; }
+/*use margin to adjust inner div, you can use border here to debug*/
+.main .card-middle3 { margin: 0px 140px 0px 220px; min-width: 300px; overflow: auto; padding: 20px; }
+.card-middle3 img { float: right; padding: 5px;}
+.card-middle3 p { padding: 5px; }
+
+.card-left3 { float: left; width: 160px; padding: 20px; margin-left: -100%; }/*use negative margin*/
+.card-left3 img { float: left; }
+.card-left3 p { float: right; }
+/*margin won't change the original document-flow, so it can "go up" here, margin-left must not lower than 122px here*/
+.card-right3 { float: left; padding: 10px; width: 100px; margin-left: -122px;}/*use negative margin*/
+.card-right3 img { padding: 10px; }
