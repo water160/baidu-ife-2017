@@ -32,7 +32,7 @@ thead > tr > th { background: #333333; color: #ffffff; }
 #lastrow { background: #cccccc; font-weight: bold; }
 
 .side { width: 380px; background: #ffffff; margin: 20px 0px; border: 1px solid #cccccc;
-        box-shadow: 2px 2px 2px #888888; padding: 15px; position: absolute; margin-left: 66%;
+        box-shadow: 2px 2px 2px #888888; padding: 15px; position: absolute; margin-left: 67%;
         margin-right: 20px; top: 75px;}
 .side-bar { border-left: 3px solid #cccccc; margin: 20px 0px 0px 1em; padding: 10px 0px 10px 12px; }
 .side-bar-title { margin: 0em 2em; }
