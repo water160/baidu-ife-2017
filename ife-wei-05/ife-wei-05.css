@@ -1,16 +1,17 @@
 * { margin: 0; padding: 0; }/*这里消除所有默认margin和padding*/
 body { background: #DEDEDE; font-family: "Times New Roman", "Cambria", "黑体", "Georgia", serif }
-.navbar { width: 100%; height: 65px; background: #333333; }
-#navlogo { float: left; padding: 5px 50px; }
+.navbar { position: absolute; top: 0; width: 100%; height: 70px; background: #333333; }
+#navlogo { float: left; padding: 8px 50px; }
 #navlist { float: right; margin-right:20px; }
 #navlist li { display: inline; }
-#navlist li a { display: inline-block; padding: 0px 20px; line-height: 65px; height: 65px;
+#navlist li a { display: inline-block; padding: 0px 20px; line-height: 70px; height: 70px;
                 color: #ffffff; text-decoration: none; background: #333333; }
 #navlist li a:hover { background: #3355D0; transition: .2s all; }
 
-.container { margin: 30px; width: 63%; min-width: 240px;}
-.card { background: #ffffff; margin: 20px 0px; border: 1px solid #cccccc;
-        box-shadow: 2px 2px 2px #888888; padding: 15px; }
+.container { width:100%; overflow: hidden; *zoom: 1; }
+.cardset { min-width: 400px; margin: 100px 460px 0px 10px; }
+.card { background: #ffffff; border: 1px solid #cccccc; margin: 20px; padding: 10px;
+        box-shadow: 2px 2px 2px #888888; }
 h1, h2, h3 { padding: 20px 0px 5px 20px; }
 h1 { font-size: 1.5em; }
 h2 { color: #888B88; font-size: 1em; }
@@ -24,16 +25,16 @@ ul#picset > li { text-indent: 0em; text-align: center; font-size: .8em; width: 1
 ul#picset > li > img { width: 100px; height: 88px; }
 
 .card > ol { padding: 10px 4em; }
+.card div p { padding-left: 20px; }
 table, th, td { border:1px solid #aaaaaa; border-collapse: collapse;}
 table { width: 97%; margin: 0em 1em 1em 1em; }
 th { text-align: left; padding: 3px 0px 3px 5px; }
 td { padding: 3px 0px 3px 5px; }
 thead > tr > th { background: #333333; color: #ffffff; }
-#lastrow { background: #cccccc; font-weight: bold; }
+table tr:last-child { background: #cccccc; font-weight: bold; }
 
-.side { width: 380px; background: #ffffff; margin: 20px 0px; border: 1px solid #cccccc;
-        box-shadow: 2px 2px 2px #888888; padding: 15px; position: absolute; margin-left: 67%;
-        margin-right: 20px; top: 75px;}
+.side { width: 380px; background: #ffffff; margin: 100px 30px 20px 0px; border: 1px solid #cccccc;
+        box-shadow: 2px 2px 2px #888888; padding: 15px; float: right; }
 .side-bar { border-left: 3px solid #cccccc; margin: 20px 0px 0px 1em; padding: 10px 0px 10px 12px; }
 .side-bar-title { margin: 0em 2em; }
 .line { padding: 5px 0px; }
@@ -44,5 +45,5 @@ thead > tr > th { background: #333333; color: #ffffff; }
            background: #3355D0; color: #ffffff; text-align: center; font-size: 1em; }
 #submit1:hover { background: #3366DD; cursor: pointer; transition: .5 linear;}
 
-.footer { width: 100%; height: 70px; background: #333333; color: #ffffff; }
+.footer { position: absolute; width: 100%; height: 70px; background: #333333; color: #ffffff; }
 .footer > p { padding-top: 20px; text-align: center; }
