@@ -4,3 +4,4 @@
 * 任务三：三栏式布局 [预览地址](https://htmlpreview.github.io/?https://github.com/water160/baidu-ife-2017/blob/master/ife-wei-03/ife-wei-03.html)
 * 任务四：定位和居中问题 [预览地址](https://htmlpreview.github.io/?https://github.com/water160/baidu-ife-2017/blob/master/ife-wei-04/ife-wei-04.html)
 * 任务五：零基础HTML及CSS编码（二） [预览地址](http://htmlpreview.github.io/?https://github.com/water160/baidu-ife-2017/blob/master/ife-wei-05/ife-wei-05.html)
+* 任务六：通过HTML及CSS模拟报纸排版 [预览地址](http://htmlpreview.github.io/?https://github.com/water160/baidu-ife-2017/blob/master/ife-wei-06/ife-wei-06.html)
