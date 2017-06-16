@@ -6,7 +6,7 @@
   box-shadow: 2px 2px 2px #ccc; margin: 0 auto;
 }
 .poster {
-  width: 892px; height: 1386px; margin: 0 auto;
+  width: 892px; height: 1386px; margin: 0 auto; z-index: -99;
 }
 
 .top {
@@ -116,7 +116,7 @@
   border-bottom: 2px solid #11456b; padding-bottom: 10px;
 }
 .front-technology .THEword {
-  font-size: 72px; font-style: italic; color: #f5e327;
+  font-size: 72px; font-style: italic; color: #f5e327; z-index: 1;
 }
 .chinese {
   font-size: 33px;
@@ -149,8 +149,56 @@
   font-size: 26px; color: #ffffff; padding: 0px 10px; font-style: normal;
 }
 .lastblock {
-  margin-top: 20px; width: 459px; height: 318px; background: #eeedd6; padding: 20px 10px 0px 40px; 
+  margin-top: 20px; width: 459px; height: 318px; background: #eeedd6; position: relative;
 }
 .ultext {
-  font-size: 16px; color: #5a5b5b; text-align: justify; line-height: 36px; font-family: "宋体";
+  padding: 20px 0px 0px 40px;
 }
+.ultext li {
+  font-size: 16px; color: #5a5b5b; letter-spacing: 2px; line-height: 36px; font-family: "STSong";
+  list-style: none; padding-left: 20px;
+}
+.i-small {
+  font-style: italic; font-size: 12px; font-family: "STSong";
+}
+.triangle-up {
+  width: 0px; height: 0px; border-left: 5px solid transparent; border-right: 5px solid transparent;
+  border-bottom: 8px solid #11456b; position: absolute; margin-right: 20px; margin-top: 14px;
+}
+.redblock {
+  background: #d45d5c; width: 260px; height: 160px; position: absolute; left: 0; bottom: 0;
+}
+.redblock > p {
+  color: #ffffff; font-size: 110px; position: absolute; margin-top: 7.5px; margin-left: 10px;
+}
+.lasttext-left {
+  position: absolute; margin-top: 30px; margin-left: 79px;
+  padding: 10px 2px;
+}
+.lasttext-left .order, .hello{
+  color: #ffffff; font-family: "SimHei"; line-height: 24px; padding-left: 10px;
+}
+.white-line {
+  float: left; background: #ffffff; width: 2px; height: 86px; margin-top: 37px; margin-left: 80px;
+}
+.order {
+  font-size: 21px; line-height: 24px; font-style: italic;
+}
+.hello {
+  font-size: 12px; line-height: 15px; padding-top: 6px;
+}
+.quotation {
+  position: absolute; bottom: 0; right: 0; width: 180px; margin-bottom: 50px;
+}
+.quotation p {
+  font-size: 14px; color: #5a5b5b; font-family: "SimHei"; font-style: italic;
+  text-indent: 2em;
+}
+.quotation p::before, .quotation p::after {
+  content: "“\00A0"; font-size: 72px; color: #d45d5c; font-style: normal;
+  position: absolute; margin: -20px 0px 0px -95px;
+}
+.quotation p::after {
+  content: "”"; margin: -5px 0px 0px -20px;
+}
+
